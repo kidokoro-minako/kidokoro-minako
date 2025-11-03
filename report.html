@@ -87,7 +87,15 @@
   .navbar .nav-links.active {
     display: flex;
   }
+ 
+  body {
+    padding: 10px;
+  }
+  .navbar {
+    padding: 10px;
+  }
 }
+
     nav a {
       color: #444;
       text-decoration: none;
@@ -186,13 +194,15 @@
     </script>
 </head>
 <body>
-  <nav>
-    <div><strong>みんなのこころのおきどころ</strong></div>
-    <div>
+  <nav class="navbar">
+    <div class="brand">みんなのこころのおきどころ</div>
+    <button class="menu-toggle" aria-label="メニューを開く">&#9776;</button>
+    <div class="nav-links">
       <a href="index.html">TOP</a>
       <a href="report.html">議会報告</a>
     </div>
   </nav>
+
 
   <header>
     <h1>議会報告</h1>
