@@ -5,29 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>議会報告｜城所美奈子</title>
   <style>
-body {
-  font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 20px;
-}
+    body {
+      font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
     nav {
-  background-color: #A0E7E5; /* 水色に少し緑が入った色味 */
-  padding: 10px 20px;
-  color: #333; /* 白だと薄すぎる場合は濃いグレーに変更 */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
+      background-color: #A0E7E5;
+      padding: 10px 20px;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     nav a {
-      color: white;
+      color: #444;
       text-decoration: none;
       margin-left: 20px;
+      font-size: 1em;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
     }
     nav a:hover {
-      text-decoration: underline;
+      background-color: #d0f0ef;
+      color: #222;
     }
     header {
       text-align: center;
@@ -41,29 +44,71 @@ body {
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+    .section-divider {
+      border-top: 1px solid #ccc;
+      margin: 40px 0 20px;
+    }
     .report {
       margin-bottom: 30px;
     }
     .report h3 {
-      margin-bottom: 5px;
-      color: #333;
+      font-size: 1.1em;
+      font-weight: normal;
+      color: #444;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
     }
     .report p {
       margin: 0 0 10px;
       line-height: 1.6;
+      color: #555;
     }
     .report a {
       color: #0077cc;
       text-decoration: none;
+      font-weight: bold;
     }
     .report a:hover {
+      text-decoration: underline;
+    }
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      margin-top: 10px;
+    }
+    .link-list {
+      margin-top: 20px;
+    }
+    .link-list h4 {
+      font-size: 1em;
+      color: #444;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+    }
+    .link-list ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .link-list li {
+      margin-bottom: 6px;
+    }
+    .link-list a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: normal;
+    }
+    .link-list a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <nav>
-    <div><strong>城所美奈子</strong></div>
+    <div><strong>みんなのこころのおきどころ</strong></div>
     <div>
       <a href="index.html">自己紹介</a>
       <a href="report.html">議会報告</a>
@@ -72,26 +117,36 @@ body {
 
   <header>
     <h1>議会報告</h1>
-    <p>城所美奈子がこれまでに行ってきた議会活動のご報告を掲載しています。</p>
+    <p>これまでの行ってきた議会活動のご報告を掲載しています。</p>
   </header>
 
   <div class="report-container">
     <div class="report">
       <h3>2025年9月定例会報告</h3>
-      <p>地域医療の充実に向けた提案、子育て支援制度の拡充について質疑を行いました。</p>
-      <div class="report">
-        <h3>2025年9月定例会報告</h3>
-        <iframe src=document/b4_chirashi_tate_omote2.pdf width="100%" height="800px" style="border: none;"></iframe>
+      <iframe src="document/b4_chirashi_tate_omote2.pdf"></iframe>
+
+      <div class="link-list">
+        <div class="report" id="link-list">
+          <h4>一般質問議会中継</h4>
+          <a href="https://smart.discussvision.net/smart/tenant/hidaka/WebView/rd/speech.html?council_id=49&schedule_id=4&playlist_id=4&speaker_id=30&target_year=2025">一般質問議会中継</a>
+        </div>
+          <div class="report" id="link-list">
+            <h4>ワクチン接種としない死亡率増加との関連調査について</h4>
+            <ul>
+              <li><a href="https://drive.google.com/file/d/12pUujvQbOkDYErsHgPLcJcakmkCPNJvZ/view?usp=drive_link">年間死亡率</a></li>
+              <li><a href="https://drive.google.com/file/d/1gdM1_3tl3wS0mAa8sE2H8x09h9FbaY4_/view?usp=drive_link">増加死亡数</a></li>
+              <li><a href="https://drive.google.com/file/d/1C_mI-Bsmlsk_IIybvr2rkiTxAOVFbSai/view?usp=drive_link">見かけ死亡率</a></li>
+            </ul>
+            </div>
       </div>
     </div>
 
-    <div class="report">
-      <h3>2025年6月定例会報告</h3>
-      <p>市内公共施設のバリアフリー化についての進捗確認と、今後の整備計画について質問しました。</p>
-      <a href="documents/2025_06_report.pdf" target="_blank">▶ 詳細な報告書（PDF）を読む</a>
-    </div>
+    <div class="section-divider"></div>
 
-    <!-- 追加の報告はこの下にコピーして増やせます -->
+    <div class="report">
+      <h3>2025年6月議会報告</h3>
+      <a href="document/2025_06_report.pdf" target="_blank"></a>
+    </div>
   </div>
 </body>
 </html>
