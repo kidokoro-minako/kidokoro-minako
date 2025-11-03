@@ -5,32 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>みんなのこころのおきどころ｜城所美奈子</title>
   <style>
-body {
-  font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 20px;
-}
-nav {
-  background-color: #A0E7E5; /* 水色に少し緑が入った色味 */
-  padding: 10px 20px;
-  color: #333; /* 白だと薄すぎる場合は濃いグレーに変更 */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    body {
+      font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    nav {
+      background-color: #A0E7E5;
+      padding: 10px 20px;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     nav a {
-      color: white;
+      color: #444;
       text-decoration: none;
       margin-left: 20px;
+      font-size: 1em;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
     }
     nav a:hover {
-      text-decoration: underline;
+      background-color: #d0f0ef;
+      color: #222;
     }
     header {
       text-align: center;
       padding: 30px 20px;
     }
+    header ul.profile-list {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto 20px;
+}
     .profile {
       max-width: 800px;
       margin: 0 auto;
@@ -39,35 +49,107 @@ nav {
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    iframe {
-      width: 100%;
-      border: none;
-      margin-top: 20px;
+    .profile-list {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+  }
+    .section-divider {
+      border-top: 1px solid #ccc;
+      margin: 40px 0 20px;
     }
     .service-header {
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-top: 30px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
     }
     .service-header img {
-      width: 32px;
-      height: 32px;
+      width: 24px;
+      height: 24px;
     }
-    #note-feed a {
-      display: block;
-      margin: 8px 0;
-      color: #0077cc;
+    .service-header h3 {
+      font-size: 1em;
+      font-weight: normal;
+      color: #444;
+      margin: 0;
+    }
+    .service-header h3 a {
+      color: #444;
       text-decoration: none;
     }
-    #note-feed a:hover {
+    .service-header h3 a:hover {
+      text-decoration: underline;
+    }
+    iframe {
+      width: 100%;
+      border: none;
+      margin-top: 10px;
+    }
+    #note-feed .note-card {
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 12px;
+      margin-bottom: 15px;
+    }
+    #note-feed .note-card h4 {
+      margin: 0 0 8px;
+      font-size: 1em;
+      color: #333;
+    }
+    #note-feed .note-card p {
+      font-size: 0.9em;
+      color: #555;
+    }
+    #note-feed .note-card a {
+      display: inline-block;
+      margin-top: 8px;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .sns-links {
+      margin-top: 30px;
+    }
+    .sns-links h3 {
+      font-size: 1em;
+      color: #444;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+    }
+    .sns-links ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .sns-links li {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .sns-links img {
+      width: 20px;
+      height: 20px;
+    }
+    .sns-links a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: normal;
+    }
+    .sns-links a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <nav>
-    <div><strong>城所美奈子</strong></div>
+    <div><strong>みんなのこころのおきどころ</strong></div>
     <div>
       <a href="index.html">自己紹介</a>
       <a href="report.html">議会報告</a>
@@ -78,31 +160,39 @@ nav {
     <h2>みんなのこころのおきどころ</h2>
     <h1>城所美奈子</h1>
     <img src="photo/顔写真.png" alt="城所美奈子の顔写真" style="width:150px; border-radius:50%; display:block; margin:0 auto 20px;">
+    <ul class="profile-list">
+      <li>日高市議会議員</li>
+      <li>元保育士</li>
+      <li>娘2人</li>
+    </ul>
+      <p>
+      保育園をゼロから立ち上げ、オーガニック給食提供の2園を運営後、園を譲渡した経験を活かし、現在は市議1期目</p>
+      
+      <p>みなこ・きどころ<br>
+      「みんなのこころのおきどころ」<br></p>
+      
+      <p>保育園運営の他、花屋や自然食材店等の経営経験もあり</p>
+      
 
-    <p>こんにちは！このページでは、私の活動や日々の思いを発信しているFacebookとnoteの最新投稿をまとめてご覧いただけます。</p>
-    <p>日々の気づき、創作、地域とのつながりなど、さまざまなテーマで発信しています。ぜひご覧ください。</p>
   </header>
 
   <div class="profile">
-    <h2>自己紹介</h2>
-    <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin: 20px 0;">
-      <img src="photo/みんなのこころのおきどころ.png" alt="ロゴ" style="width:150px;">
-      <div>
-        <p><strong>住所：</strong>埼玉県日高市〇〇〇〇</p>
-        <p><strong>電話：</strong>090-1234-5678</p>
-        <p><strong>メール：</strong><a href="mailto:minako@example.com">minako@example.com</a></p>
-      </div>
-    </div>
+    <p>このページでは、私の活動や日々の思いを発信しているFacebookとnoteの最新投稿をまとめてご覧いただけます。</p>
+    <p>日々の気づき、創作、地域とのつながりなど、さまざまなテーマで発信しています。ぜひご覧ください。</p>
+
+
+    <div class="section-divider"></div>
 
     <div class="service-header">
       <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-      <h3><a href="https://www.facebook.com/people/%E5%9F%8E%E6%89%80-%E7%BE%8E%E5%A5%88%E5%AD%90/100004034774539" target="_blank">Facebook投稿</a></h3>
+      <h3><a href="https://www.facebook.com/people/城所-美奈子/100004034774539" target="_blank">Facebook投稿</a></h3>
     </div>
-    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2F%E5%9F%8E%E6%89%80-%E7%BE%8E%E5%A5%88%E5%AD%90%2F100004034774539&tabs=timeline&width=500&height=600" width="500" height="600" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2F城所-美奈子%2F100004034774539&tabs=timeline&width=500&height=600" width="100%" height="600" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
+    <div class="section-divider"></div>
 
     <div class="service-header">
       <img src="https://note.com/favicon.ico" alt="note">
-      <h3><a href="https://note.com/minako_kidokorode" target="_blank">note最新記事</a></h3>
+      <h3><a href="https://note.com/minako_kidokorode" target="_blank">noteでの最近の投稿</a></h3>
     </div>
     <div id="note-feed">読み込み中...</div>
     <script>
@@ -113,7 +203,12 @@ nav {
           container.innerHTML = '';
           data.items.slice(0, 5).forEach(item => {
             const entry = document.createElement('div');
-            entry.innerHTML = `<h4>${item.title}</h4><p>${item.description}</p><hr>`;
+            entry.className = 'note-card';
+            entry.innerHTML = `
+              <h4>${item.title}</h4>
+              <p>${item.description}</p>
+              <a href="${item.link}" target="_blank"></a>
+            `;
             container.appendChild(entry);
           });
         })
@@ -122,5 +217,28 @@ nav {
         });
     </script>
   </div>
+
+  <h4>城所 美奈子 (きどころ みなこ)</h4>
+  <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin: 20px 0;">
+    <img src="photo/みんなのこころのおきどころ.png" alt="ロゴ" style="width:150px;">
+    <div>
+      <p><strong>住所：</strong>〒350-1232 埼玉県日高市中鹿山</p>
+      <p><strong>電話：</strong>080-3354-3753</p>
+      <p><strong>メール：</strong><a href="mailto:hidaka.kidokorominako@gmail.com">hidaka.kidokorominako@gmail.com</a></p>
+    </div>
+  </div>
+
+  <div class="sns-links">
+    <h3>SNSリンク集</h3>
+    <ul>
+      <li><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"><a href="https://www.facebook.com/people/城所-美奈子/100004034774539" target="_blank">Facebook</a></li>
+      <li><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Instagram.svg" alt="Instagram"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+      <li><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X"><a href="https://twitter.com/" target="_blank">X（旧Twitter）</a></li>    
+      <li><img src="https://note.com/favicon.ico" alt="note"><a href="https://note.com/minako_kidokorode" target="_blank">note</a></li>
+    </ul>
+  </div>
+
 </body>
 </html>
+
+
