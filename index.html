@@ -199,40 +199,68 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .sns-links {
-      margin-top: 30px;
-    }
-    .sns-links h3 {
-      font-size: 1em;
-      color: #444;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 4px;
-    }
-    .sns-links ul {
-      list-style: none;
-      padding-left: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-    .sns-links li {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .sns-links img {
-      width: 20px;
-      height: 20px;
-    }
-    .sns-links a {
-      color: #0077cc;
-      text-decoration: none;
-      font-weight: normal;
-    }
-    .sns-links a:hover {
-      text-decoration: underline;
-    }
+    .site-footer {
+  background-color: #f8f8f8;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+}
+
+.site-footer h4 {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.footer-profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-profile img {
+  width: 120px;
+}
+
+.footer-profile p {
+  margin: 4px 0;
+  font-size: 0.95em;
+  color: #444;
+}
+
+.sns-links ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.sns-links li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sns-links img {
+  width: 20px;
+  height: 20px;
+}
+
+.sns-links a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.sns-links a:hover {
+  text-decoration: underline;
+}
+
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -293,7 +321,7 @@
 
     <div class="service-header">
       <img src="https://note.com/favicon.ico" alt="note">
-      <h3><a href="https://note.com/minako_kidokorode" target="_blank">noteでの最近の投稿</a></h3>
+      <h3><a href="https://note.com/minako_kidokoro" target="_blank">noteでの最近の投稿</a></h3>
     </div>
     <div id="note-feed">読み込み中...</div>
     <script>
@@ -319,27 +347,31 @@
     </script>
   </div>
 
-  <h4>城所 美奈子 (きどころ みなこ)</h4>
-  <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin: 20px 0;">
-    <img src="photo/みんなのこころのおきどころ.png" alt="ロゴ" style="width:150px;">
-    <div>
-      <p><strong>住所：</strong>〒350-1232 埼玉県日高市中鹿山</p>
-      <p><strong>電話：</strong>080-3354-3753</p>
-      <p><strong>メール：</strong><a href="mailto:hidaka.kidokorominako@gmail.com">hidaka.kidokorominako@gmail.com</a></p>
+  <footer class="site-footer">
+    <h4>城所 美奈子 (きどころ みなこ)</h4>
+    <div class="footer-profile">
+      <img src="photo/みんなのこころのおきどころ.png" alt="ロゴ">
+      <div>
+        <p><strong>住所：</strong>〒350-1232 埼玉県日高市中鹿山</p>
+        <p><strong>電話：</strong>080-3354-3753</p>
+        <p><strong>メール：</strong>
+          <a href="mailto:hidaka.kidokorominako@gmail.com">hidaka.kidokorominako@gmail.com</a>
+        </p>
+      </div>
     </div>
-  </div>
-
-  <div class="sns-links">
-    <h3>SNS</h3>
-    <ul>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"><a href="https://www.facebook.com/people/城所-美奈子/100004034774539" target="_blank">Facebook</a></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Instagram.svg" alt="Instagram"><a href="https://www.instagram.com/minakoro87/?igsh=bmd2cDI5NjlhZXhr#" target="_blank">Instagram</a></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X"><a href="https://x.com/minakoro87?s=11&t=sUmAWpKsVOPpmYHOJDPCLQ" target="_blank">X（旧Twitter）</a></li>    
-      <li><img src="https://note.com/favicon.ico" alt="note"><a href="https://note.com/minako_kidokoro" target="_blank">note</a></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_squircle_%282017%29.svg" alt="YouTube"><a href="https://www.youtube.com/watch?v=mms-Ia6Y5m4" target="_blank">YouTube</a></li>
-    </ul>
-  </div>
-
+  
+    <div class="sns-links">
+      <h3>SNS</h3>
+      <ul>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"><a href="https://www.facebook.com/people/城所-美奈子/100004034774539" target="_blank">Facebook</a></li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Instagram.svg" alt="Instagram"><a href="https://www.instagram.com/minakoro87/?igsh=bmd2cDI5NjlhZXhr#" target="_blank">Instagram</a></li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X"><a href="https://x.com/minakoro87?s=11&t=sUmAWpKsVOPpmYHOJDPCLQ" target="_blank">X（旧Twitter）</a></li>
+        <li><img src="https://note.com/favicon.ico" alt="note"><a href="https://note.com/minako_kidokoro" target="_blank">note</a></li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_squircle_%282017%29.svg" alt="YouTube"><a href="https://www.youtube.com/watch?v=mms-Ia6Y5m4" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+  </footer>
+  
 </body>
 </html>
 
