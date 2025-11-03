@@ -19,6 +19,75 @@
       justify-content: space-between;
       align-items: center;
     }
+    .navbar {
+  background-color: #A0E7E5;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.navbar .brand {
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar .menu-toggle {
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: #444;
+  cursor: pointer;
+  display: none;
+  margin-left: auto;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links a {
+  color: #444;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #d0f0ef;
+  color: #222;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    align-items: flex-end;
+    margin-top: 10px;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+}
     nav a {
       color: #444;
       text-decoration: none;
@@ -105,6 +174,16 @@
       text-decoration: underline;
     }
   </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const toggleButton = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+    
+        toggleButton.addEventListener('click', function () {
+          navLinks.classList.toggle('active');
+        });
+      });
+    </script>
 </head>
 <body>
   <nav>
