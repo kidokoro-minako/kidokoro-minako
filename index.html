@@ -12,7 +12,7 @@
       padding: 20px;
     }
     nav {
-      background-color: #A0E7E5;
+      background-color: 	#FFA07A;
       padding: 10px 20px;
       color: #333;
       display: flex;
@@ -20,7 +20,7 @@
       align-items: center;
     }
     .navbar {
-  background-color: #A0E7E5;
+  background-color: 	#FFA07A;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -62,6 +62,16 @@
   background-color: #d0f0ef;
   color: #222;
 }
+.desktop-title {
+  display: block;
+}
+.mobile-title {
+  display: none;
+}
+
+
+
+
 
 /* スマホ対応 */
 @media (max-width: 600px) {
@@ -93,6 +103,13 @@
   }
   .navbar {
     padding: 10px;
+  }
+
+  .desktop-title {
+    display: none;
+  }
+  .mobile-title {
+    display: block;
   }
 }
 
@@ -261,6 +278,15 @@
   text-decoration: underline;
 }
 
+.tight-heading {
+  margin-bottom: 5px;
+}
+
+.tight-sub {
+  margin-top: 0;
+}
+
+
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -286,8 +312,11 @@
   
 
   <header>
-    <h2>みんなのこころのおきどころ</h2>
-    <h1>城所美奈子</h1>
+    <h2 class="desktop-title">みんなのこころのおきどころ</h2>
+    <h2 class="mobile-title">みんなのこころの<br>おきどころ</h2>
+
+    <h1 class="tight-heading">城所美奈子</h1>
+    <p class="tight-sub">きどころ みなこ</p>
     <img src="photo/顔写真.png" alt="城所美奈子の顔写真" style="width:150px; border-radius:50%; display:block; margin:0 auto 20px;">
     <ul class="profile-list">
       <li>日高市議会議員</li>
@@ -295,7 +324,7 @@
       <li>娘2人</li>
     </ul>
       <p>
-      保育園をゼロから立ち上げ、オーガニック給食提供の2園を運営後、園を譲渡した経験を活かし、現在は市議1期目</p>
+      保育園をゼロから立ち上げ、オーガニック給食提供の2園を運営後、園を譲渡した経験を活かし、現在、日高市議会議員</p>
       
       <p>みなこ・きどころ<br>
       「みんなのこころのおきどころ」<br></p>
