@@ -246,6 +246,10 @@
   margin-top: 0;
 }
 
+.mobile-only {
+  display: none;
+}
+
 /* スマホ対応 */
 @media (max-width: 600px) {
   .navbar {
@@ -290,6 +294,10 @@
   }
   .mobile-text {
     display: block;
+  }
+
+  .mobile-only {
+    display: inline;
   }
 }
 
@@ -358,7 +366,7 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
       <h3><a href="https://www.facebook.com/people/城所-美奈子/100004034774539" target="_blank">Facebook投稿</a></h3>
     </div>
-    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2F城所-美奈子%2F100004034774539&tabs=timeline&width=500&height=600" width="100%" height="600" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
+
     <div class="section-divider"></div>
 
     <div class="service-header">
@@ -390,11 +398,13 @@
   </div>
 
   <footer class="site-footer">
-    <h4>城所 美奈子 (きどころ みなこ)</h4>
+    <h4>城所 美奈子<br class="mobile-only"> (きどころ みなこ)</h4>
     <div class="footer-profile">
       <img src="photo/みんなのこころのおきどころ.png" alt="ロゴ">
       <div>
-        <p><strong>住所：</strong>〒350-1232 埼玉県日高市中鹿山</p>
+        <p><strong>住所：</strong>〒350-1232 埼玉県日高市
+          <br class="mobile-only">中鹿山
+        </p>
         <p><strong>電話：</strong>080-3354-3753</p>
         <p><strong>メール：</strong>
           <a href="mailto:hidaka.kidokorominako@gmail.com">hidaka.kidokorominako@gmail.com</a>
