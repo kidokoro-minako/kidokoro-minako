@@ -217,6 +217,16 @@
   text-decoration: underline;
 }
 
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-only {
+    display: inline;
+  }
+}
+
   </style>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
@@ -249,6 +259,7 @@
     <div class="report">
       <h3>2025年9月議会報告</h3>
       <iframe src="document/b4_chirashi_tate_omote2.pdf"></iframe>
+      <iframe src="document/b4_chirashi_tate_ura2.pdf"></iframe>
 
       <div class="link-list">
         <div class="report" id="link-list">
@@ -270,23 +281,58 @@
 
     <div class="report">
       <h3>2025年6月議会報告</h3>
-      <a href="document/2025_06_report.pdf" target="_blank"></a>
+      <iframe src="document/katudouhoukoku_vol5_omote.pdf"></iframe>
+      <iframe src="document/katudouhoukoku_vol5_ura.pdf"></iframe>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <div class="report">
+      <h3>2025年3月議会報告</h3>
+      <iframe src="document/katudouhoukoku_vol4_omote.pdf"></iframe>
+      <iframe src="document/katudouhoukoku_vol4_ura.pdf"></iframe>
+    </div>
+
+
+    <div class="section-divider"></div>
+
+    <div class="report">
+      <h3>2024年12月議会報告</h3>
+      <iframe src="document/katudouhoukoku_vol3_omote.pdf"></iframe>
+      <iframe src="document/katudouhoukoku_vol3_ura.pdf"></iframe>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <div class="report">
+      <h3>2024年9月議会報告</h3>
+      <iframe src="document/katudouhoukoku_vol2_soto.pdf"></iframe>
+      <iframe src="document/katudouhoukoku_vol2_naka.pdf"></iframe>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <div class="report">
+      <h3>2024年6月議会報告</h3>
+      <iframe src="document/katudouhoukoku_vol1_soto.pdf"></iframe>
+      <iframe src="document/katudouhoukoku_vol1_naka.pdf"></iframe>
     </div>
   </div>
 
   <footer class="site-footer">
-    <h4>城所 美奈子 (きどころ みなこ)</h4>
+    <h4>城所 美奈子<br class="mobile-only"> (きどころ みなこ)</h4>
     <div class="footer-profile">
       <img src="photo/みんなのこころのおきどころ.png" alt="ロゴ">
       <div>
-        <p><strong>住所：</strong>〒350-1232 埼玉県日高市中鹿山</p>
+        <p><strong>住所：</strong>〒350-1232 埼玉県日高市
+          <br class="mobile-only">中鹿山
+        </p>
         <p><strong>電話：</strong>080-3354-3753</p>
         <p><strong>メール：</strong>
           <a href="mailto:hidaka.kidokorominako@gmail.com">hidaka.kidokorominako@gmail.com</a>
         </p>
       </div>
-    </div>
-  
+    </div>  
     <div class="sns-links">
       <h3>SNS</h3>
       <ul>
